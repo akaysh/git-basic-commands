@@ -1,6 +1,6 @@
 # git-basic-commands
 
-Tell Git who you are	
+**Tell Git who you are**	
 Configure the author name and email address to be used with your commits.
 
 Note that Git strips some characters (for example trailing periods) from user.name.
@@ -9,13 +9,13 @@ git config --global user.name "Akshay Sharma"
 
 git config --global user.email akshay@example.com
 ```
-Create a new local repository
+**Create a new local repository**
 
 ```bash 	
 git init
 ```
 
-Check out a repository
+**Check out a repository**
 
 Create a working copy of a local repository:
 ```bash
@@ -25,9 +25,9 @@ For a remote server, use:
 
 ```bash
 git clone username@host:/path/to/repository
-```bash
+```
 
-Add files
+**Add files**
 
 Add one or more files to staging (index):	
 ```bash
@@ -36,9 +36,9 @@ git add <filename>
 Add all files to staging area:
 ```bash
 git add *
-```bash
+```
 
-Commit
+**Commit**
 
 Commit changes to head (but not yet to the remote repository):	
 ```bash
@@ -49,17 +49,18 @@ Commit any files you've added with git add, and also commit any files you've cha
 git commit -a
 ```
 
-Push
+**Push**
 
 Send changes to the master branch of your remote repository:	
 ```bash
 git push origin master
 ```
-Status	List the files you've changed and those you still need to add or commit:	
+**Status**	
+List the files you've changed and those you still need to add or commit:	
 ```bash
 git status
 ```
-Connect to a remote repository
+**Connect to a remote repository**
 
 If you haven't connected your local repository to a remote server, add the server to be able to push to it:
 
@@ -72,7 +73,7 @@ List all currently configured remote repositories:
 git remote -v
 ```
 
-Branches
+**Branches**
 
 Create a new branch and switch to it:	
 ```bash
@@ -102,7 +103,7 @@ Delete a branch on your remote repository:
 ```bash
 git push origin :<branchname>
 ```
-Update from the remote repository
+**Update from the remote repository**
 
  
 
@@ -131,7 +132,7 @@ After you have manually resolved any conflicts, you mark the changed file:
 ```bash
 git add <filename>
 ```
-Tags
+**Tags**
 
 You can use tagging to mark a significant changeset, such as a release:	
 ```bash
@@ -146,7 +147,7 @@ Push all tags to remote repository:
 git push --tags origin
 ```
 
-Undo local changes
+**Undo local changes**
 
 If you mess up, you can replace the changes in your working tree with the last content in head:
 
@@ -161,6 +162,9 @@ git fetch origin
 
 git reset --hard origin/master
 ```
-Search
+**Search**
 
-Search the working directory for foo():	git grep "foo()"
+Search the working directory for foo():
+```bash
+git grep "foo()"
+```
