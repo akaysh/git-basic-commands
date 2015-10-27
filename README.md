@@ -91,6 +91,10 @@ Delete the feature branch:
 ```bash
 git branch -d <branchname>
 ```
+Delete branch from GitHub
+```bash
+git push origin <branchname> --delete
+```
 Push the branch to your remote repository, so others can use it:	
 ```bash
 git push origin <branchname>
