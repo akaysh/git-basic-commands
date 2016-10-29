@@ -136,6 +136,19 @@ After you have manually resolved any conflicts, you mark the changed file:
 ```bash
 git add <filename>
 ```
+**Remotes**
+
+Remotes are useful for tracking repositories which are present on multiple Git
+servers(such as Github, Bitbucket, etc.)
+You can add multiple remote URLs
+```bash
+git remote add upstream <url>
+```
+Similarly, you can remove added remotes, such as:
+```bash
+git remote remove upstream
+```
+
 **Tags**
 
 You can use tagging to mark a significant changeset, such as a release:	
